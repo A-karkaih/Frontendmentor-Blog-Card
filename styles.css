@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5d14f;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  transition: 0.3s;
+}
+
+.card .container {
+  width: 330px;
+
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 0 black;
+}
+.container:hover {
+  box-shadow: 12px 12px 0 black;
+}
+.card .container .content {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .container .content .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.card .container .content .title1 {
+  background-color: #f5d14f;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.card .container .content .title1 .title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card .container .content .date {
+  font-size: 10px;
+  font-weight: 200;
+  opacity: 0.9;
+}
+.card .container .content .title2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card .container .content .text {
+  font-size: 14px;
+  font-weight: 200;
+  color: #6b6b6b;
+}
+
+.card .container .content .owner-section {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.card .container .content .owner-section img {
+  width: 30px;
+}
+
+.card .container .content .owner-section span {
+  font-size: 12px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.attribution {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .card .container {
+    max-width: 330px;
+    width: 90%;
+  }
+}
